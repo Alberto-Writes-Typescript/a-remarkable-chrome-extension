@@ -1,3 +1,5 @@
+// @ts-ignore
+
 import React, { useCallback, useState } from 'react'
 
 import './App.css'
