@@ -1,2 +1,18 @@
 # Ignore IDE configuration files
 .idea
+
+# Ignore NPM dependences
+node_modules
+
+# Ignore logs
+*.log
+
+# Ignore environment file
+.env
+
+# Ignore test coverage reports
+coverage
+
+# Ignore build files
+public/build/
+!public/build/.keep
