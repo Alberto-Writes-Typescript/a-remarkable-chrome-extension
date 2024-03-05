@@ -1,10 +1,8 @@
-// @ts-ignore
-
-import React, { useCallback, useState } from 'react'
+import { type ReactElement, useCallback, useState } from 'react'
 
 import './App.css'
 
-export const App = (props: { message: string }) => {
+export const App = (props: { message: string }): ReactElement => {
   const [count, setCount] = useState(0)
 
   const increment = useCallback(() => {

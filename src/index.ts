@@ -4,7 +4,7 @@ import { App } from './App.js'
 
 const rootElem = document.getElementById('root')
 
-if (rootElem) {
+if (rootElem != null) {
   createRoot(rootElem).render(
     createElement(
       App,
