@@ -14,8 +14,3 @@ if (rootElem)
   );
 else alert('Cannot find element with id "root", something went wrong');
 
-declare const NODE_ENV: string;
-
-if (NODE_ENV === 'development') {
-  new EventSource('/esbuild').addEventListener('change', () => location.reload());
-}
