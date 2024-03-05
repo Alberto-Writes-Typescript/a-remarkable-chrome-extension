@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:esbuild": "node esbuild.config.js --production",
+    "build:esbuild": "node config/esbuild.config.js --production",
     "build": "yarb build:esbuild",
-    "start": "node esbuild.config.js --development"
+    "start": "node config/esbuild.config.js --development"
   },
   "type": "module",
   "keywords": [],
