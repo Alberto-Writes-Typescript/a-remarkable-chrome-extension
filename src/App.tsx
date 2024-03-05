@@ -12,7 +12,7 @@ export const App = (props: { message: string }) => {
 
   return (
     <>
-      <h1 className="text-4xl text-red-500">{props.message}</h1>
+      <h1 className="text-3xl text-red-400">{props.message}</h1>
       <h2>Count: {count}</h2>
       <button onClick={increment}>Increment</button>
     </>
