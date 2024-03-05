@@ -105,5 +105,8 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+  },
+  "exclude": ["../node_modules", "../public", "**/*.test.ts"],
+  // Set of files Typescript will apply type-checking to. This line also tells ESLint which files to lint
+  "include": ["../src/**/*.ts", "../src/**/*.tsx", "../src/**/*.js", "../src/**/*.jsx", "../test/**/*.ts"]
 }
