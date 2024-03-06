@@ -62,5 +62,9 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1",
+    "strip-ansi": "^6.0.1"
   }
 }
