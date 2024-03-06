@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+import colors from 'tailwindcss/colors.js'
+
 export default {
   // Just-In-Time compilation mode:
   // https://v2.tailwindcss.com/docs/just-in-time-mode
@@ -11,7 +12,18 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      remarkableBackground: {
+        100: '#fcfbf8',
+        500: '#f8f6f0',
+        900: '#ede8de'
+      }
+    }
   },
   plugins: [
     require('postcss-nested'),
