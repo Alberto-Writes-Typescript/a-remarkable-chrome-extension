@@ -1,6 +1,8 @@
-import colors from 'tailwindcss/colors.js'
+// Default Tailwind Colors
+const colors = require('tailwindcss/colors')
 
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   // Just-In-Time compilation mode:
   // https://v2.tailwindcss.com/docs/just-in-time-mode
   mode: 'jit',
