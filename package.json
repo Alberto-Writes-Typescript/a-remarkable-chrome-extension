@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:esbuild": "node config/esbuild.config.js --production",
-    "build:esbuild-dev": "node config/esbuild.config.js --development",
-    "build:tailwind": "npx tailwindcss --postcss ./config/postcss.config.cjs -i ./src/index.scss -o src/App.css -c ./config/tailwindcss.config.mjs --minify",
-    "build:tailwind-dev": "npx tailwindcss --postcss ./config/postcss.config.cjs -i ./src/index.scss -o src/App.css -c ./config/tailwindcss.config.mjs --watch",
+    "build:esbuild": "node config/esbuild.config.mjs --production",
+    "build:esbuild-dev": "node config/esbuild.config.mjs --development",
+    "build:tailwind": "npx tailwindcss --postcss ./config/postcss.config.cjs -i ./src/index.scss -o src/App.css -c ./config/tailwindcss.config.js --minify",
+    "build:tailwind-dev": "npx tailwindcss --postcss ./config/postcss.config.cjs -i ./src/index.scss -o src/App.css -c ./config/tailwindcss.config.js --watch",
     "build": "yarb build:esbuild",
     "lint": "yarn run eslint src -c config/eslint/.eslintrc --ignore-path config/eslint/.eslintignore",
     "lint:fix": "yarn run eslint src -c config/eslint/.eslintrc --ignore-path config/eslint/.eslintignore --fix",
-    "start": "npm-run-all --parallel build:*-dev"
+    "serve:tailwind-preview": "tailwind-config-viewer serve -c ./config/tailwindcss.config.js -p 3001",
+    "start": "npm-run-all --parallel build:*-dev serve:tailwind-preview"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -36,6 +36,7 @@
     "postcss-nested": "^6.0.1",
     "postcss-preset-env": "^9.4.0",
     "postcss-scss": "^4.0.9",
+    "tailwind-config-viewer": "^1.7.3",
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
