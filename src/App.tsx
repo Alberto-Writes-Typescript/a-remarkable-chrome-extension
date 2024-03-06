@@ -1,3 +1,5 @@
+// @ts-expect-error Required for React to be in scope
+import React from 'react'
 import { type ReactElement, useCallback, useState } from 'react'
 
 import './App.css'
