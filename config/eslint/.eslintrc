@@ -14,7 +14,7 @@
       "jsx": true
     }
   },
-  "parser": "@typescript-eslint/parser",
+  "parser": "@babel/eslint-parser",
   "plugins": [
     "@typescript-eslint"
   ],
