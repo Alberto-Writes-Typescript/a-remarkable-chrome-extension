@@ -3,16 +3,25 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:react/recommended",
     "standard-with-typescript"
   ],
   "parserOptions": {
     "project": "./tsconfig.json",
-    "tsconfigRootDir": "./config"
+    "tsconfigRootDir": "./config",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint"
   ],
-  "root": true
+  "root": true,
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
